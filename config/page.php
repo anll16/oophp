@@ -66,28 +66,6 @@ return [
         ],
         [
             "region" => "footer",
-            "template" => "anax/v2/columns/multiple_columns",
-            "data" => [
-                "class"  => "footer-column",
-                "columns" => [
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-1",
-                    ],
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-2",
-                    ],
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-3",
-                    ]
-                ]
-            ],
-            "sort" => 1
-        ],
-        [
-            "region" => "footer",
             "template" => "anax/v2/block/default",
             "data" => [
                 "class"  => "site-footer",
