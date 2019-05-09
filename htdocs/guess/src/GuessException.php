@@ -1,7 +1,5 @@
 <?php
 
-namespace Anll16\Guess;
-
 /**
  * Exception class for GuessException.
  */

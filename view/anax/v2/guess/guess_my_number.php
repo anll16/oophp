@@ -1,5 +1,11 @@
+<?php
+
+namespace Anax\View;
+
+?>
+
 <h1>Guess my number</h1>
-<p>Guess a number between 1 and 100. You have <?php echo $gameSession->tries(); ?> tries left.</p>
+<p>Guess a number between 1 and 100. You have <?php echo $data['gameSession']->tries(); ?> tries left.</p>
 
 
 <form method="post">
@@ -9,10 +15,10 @@
     <input type="submit" name="restart" value="Restart">
 
 </form>
-<?php if ($gameSession->status() !== null) : ?>
-    <p>You guessed: <?php echo $gameSession->prevGuess(); ?> and its <?php echo $gameSession->status(); ?></p>
+<?php if ($data['gameSession']->status() !== null) : ?>
+    <p>You guessed: <?php echo $data['gameSession']->prevGuess(); ?> and its <?php echo $data['gameSession']->status(); ?></p>
 <?php endif; ?>
 
-<?php if ($cheat) : ?>
-    <p>The answer is: <?php echo $cheat ?></p>
+<?php if ($data['cheat']) : ?>
+    <p>The answer is: <?php echo $data['cheat'] ?></p>
 <?php endif; ?>
