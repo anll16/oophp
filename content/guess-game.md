@@ -19,6 +19,4 @@ views:
 Guess
 =========================
 
-Test
-
-[FIGURE src=image/php.jpg?w=500 caption="En bild som har texten PHP."]
+Tryck på [den här länken](guess/play) för att spela spelet.
